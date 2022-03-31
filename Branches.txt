@@ -1,1 +1,2 @@
 Status card preview component
+3 column card component

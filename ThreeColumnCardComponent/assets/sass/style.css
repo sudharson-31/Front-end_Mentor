@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.cards {
+  padding: 10%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5%;
+  padding-right: 8%;
+}
+
+.card .icon {
+  margin: 25% 0% 10%;
+}
+
+.card .Title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2em;
+  color: #f2f2f2;
+  letter-spacing: 1px;
+  margin-bottom: 15%;
+}
+
+.card p {
+  margin: 10% -2% 40% 0%;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+.card .learnMore {
+  width: 75%;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  background-color: #f2f2f2;
+  padding: 7%;
+  cursor: pointer;
+  margin-bottom: 20%;
+}
+
+#Sedan {
+  background-color: #e38826;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#Sedan button {
+  margin-top: -6%;
+  color: #e38826;
+}
+
+#Suv {
+  background-color: #006970;
+}
+
+#Suv button {
+  color: #006970;
+}
+
+#Luxury {
+  background-color: #004241;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#Luxury button {
+  color: #004241;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    width: 80%;
+  }
+  #Sedan button {
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 75vh;
+  }
+  .card .icon {
+    margin: 15% 0% 6%;
+  }
+  .card .Title {
+    font-size: 1.8em;
+    margin-bottom: 6%;
+  }
+  .card p {
+    margin: 6% -2% 10% 0%;
+    font-size: 0.8em;
+  }
+  .card .learnMore {
+    width: 40%;
+    padding: 3%;
+    margin-bottom: 8%;
+  }
+  #Sedan {
+    border-radius: 10px 10px 0px 0px;
+  }
+  #Sedan .learnMore {
+    margin-top: -1%;
+  }
+  #Luxury {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
