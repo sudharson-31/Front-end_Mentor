@@ -119,6 +119,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 75vh;
+    padding: 50% 0 85% 0;
+  }
+  .card {
+    padding-left: 8%;
+    padding-right: 12%;
   }
   .card .icon {
     margin: 15% 0% 6%;
