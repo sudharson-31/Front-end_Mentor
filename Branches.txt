@@ -1,1 +1,3 @@
 Status card preview component
+3 Column Card Component (live)
+Interactive Rating card component
