@@ -67,13 +67,15 @@ body {
 
 .card .learnMore {
   width: 75%;
-  border: none;
+  border: 0.2em solid #f2f2f2;
   border-radius: 40px;
   outline: none;
   background-color: #f2f2f2;
   padding: 7%;
   cursor: pointer;
   margin-bottom: 20%;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 #Sedan {
@@ -86,12 +88,22 @@ body {
   color: #e38826;
 }
 
+#Sedan button:hover {
+  background-color: #e38826;
+  color: rgba(255, 255, 255, 0.75);
+}
+
 #Suv {
   background-color: #006970;
 }
 
 #Suv button {
   color: #006970;
+}
+
+#Suv button:hover {
+  background-color: #006970;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 #Luxury {
@@ -101,6 +113,11 @@ body {
 
 #Luxury button {
   color: #004241;
+}
+
+#Luxury button:hover {
+  background-color: #004241;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 @media screen and (max-width: 768px) {

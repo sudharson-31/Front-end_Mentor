@@ -53,13 +53,14 @@ body{
     }
     .learnMore{
         width: 75%;
-        border: none;
+        border: 0.2em solid $vl-gray;
         border-radius: 40px;
         outline: none;
         background-color: $vl-gray;
         padding: 7%;
         cursor: pointer;
         margin-bottom: 20%;
+        transition: all 200ms ease-in;
     }
 }
 #Sedan{
@@ -69,11 +70,19 @@ body{
         margin-top: -6%;
         color: $b-orange;
     }
+    button:hover{
+        background-color: $b-orange;
+        color: $t-white;
+    }
 }
 #Suv{
     background-color: $d-cyan;
     button{
         color: $d-cyan;
+    }
+    button:hover{
+        background-color: $d-cyan;
+        color: $t-white;
     }
 }
 #Luxury{
@@ -81,6 +90,10 @@ body{
     border-radius: 0px 10px 10px 0px;
     button{
         color: $vd-cyan;
+    }
+    button:hover{
+        background-color: $vd-cyan;
+        color: $t-white;
     }
 }
 
