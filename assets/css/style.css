@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #121417;
+  padding: 2%;
+  font-family: "Overpass", sans-serif;
+  border-radius: 30px;
+}
+
+.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252d37;
+  border-radius: 50%;
+  padding: 2%;
+  margin: 0% 0% 5%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4%;
+}
+
+.Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Content h1 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 5%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Content p {
+  color: #959eac;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+
+.Rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.Rating .Rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252d37;
+  border-radius: 50%;
+  padding: 2%;
+  padding: 5%;
+  width: 10px;
+  height: 10px;
+  color: #959eac;
+  cursor: pointer;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.Rating .Rate:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.Submit {
+  width: 100%;
+  margin-top: 4%;
+}
+
+.Submit #Submit {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 0.1em;
+  border-radius: 5em;
+  width: 100%;
+  background-color: #fb7413;
+  border: none;
+  padding: 0.9em 2em;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.Submit #Submit:hover {
+  color: #fb7413;
+  background-color: white;
+}
+
+.thankyouModal {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #121417;
+  padding: 2%;
+  font-family: "Overpass", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+.thankyouModal .yourRate {
+  margin: 5%;
+  margin-top: 6%;
+  padding: 2% 4%;
+  border-radius: 30px;
+  font-size: small;
+  background-color: #252d37;
+  color: #fb7413;
+}
+
+.thankyouModal h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: white;
+}
+
+.thankyouModal p {
+  width: 85%;
+  margin-top: 3%;
+  text-align: center;
+  color: #7c8798;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=style.css.map */
