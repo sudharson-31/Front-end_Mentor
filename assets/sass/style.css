@@ -16,6 +16,7 @@ body {
           align-items: center;
   height: 100vh;
   width: 100vw;
+  background-color: #121417;
 }
 
 .Card {
@@ -26,7 +27,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #121417;
+  background-color: #252d37;
   padding: 2%;
   font-family: "Overpass", sans-serif;
   border-radius: 30px;
@@ -42,7 +43,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #252d37;
+  background-color: #3a4655;
   border-radius: 50%;
   padding: 2%;
   margin: 0% 0% 5%;
@@ -80,6 +81,10 @@ body {
   color: #959eac;
   letter-spacing: 1px;
   font-size: 0.8em;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 70%;
 }
 
 .Rating {
@@ -109,7 +114,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #252d37;
+  background-color: #3a4655;
   border-radius: 50%;
   padding: 2%;
   padding: 5%;
@@ -159,7 +164,7 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #121417;
+  background-color: #252d37;
   padding: 2%;
   font-family: "Overpass", sans-serif;
   -webkit-box-align: center;
