@@ -1,0 +1,24 @@
+@import "colors";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.card{
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+}
+.left_c{
+
+}
+.right_c{
+    display: inline-flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
