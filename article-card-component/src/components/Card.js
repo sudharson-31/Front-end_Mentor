@@ -44,7 +44,7 @@ export default function Card(){
                         <span id="date">28 Jun 2020</span>
                     </div>
                     <span id="share-image-container" onMouseEnter={onShareHover} onMouseLeave={onShareLeave}>
-                        {shareImg} 
+                        {shareImg}
                         <Tooltip />
                     </span> 
                     

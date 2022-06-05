@@ -120,6 +120,10 @@ body {
   position: relative;
 }
 
+.content-box #profile #share-image-container svg {
+  z-index: 2;
+}
+
 .content-box #profile .tooltip-invisible {
   position: absolute;
   bottom: 150%;
@@ -136,6 +140,8 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   border-radius: 10px;
+  display: none;
+  z-index: 1;
 }
 
 .content-box #profile .tooltip-invisible #title {
@@ -183,5 +189,60 @@ body {
   top: 100%;
   border: 7px solid;
   border-color: #48556a transparent transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 290px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .banner-image-container #banner-image {
+    height: 230px;
+    width: 290px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .content-box {
+    margin: 8% 10% 6%;
+  }
+  .content-box #heading {
+    font-size: 1em;
+    padding-bottom: 3%;
+  }
+  .content-box #content {
+    font-size: 0.8em;
+    line-height: 1.7;
+    padding-bottom: 5%;
+  }
+  .content-box #share-image-container {
+    margin-left: 15% !important;
+  }
+  .content-box #title {
+    padding-right: 4% !important;
+  }
+  .content-box .tooltip-invisible {
+    position: relative;
+    width: 260px !important;
+    bottom: -80% !important;
+    right: -110% !important;
+    padding: 70% 50% !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    border-radius: 0px 0px 10px 10px  !important;
+  }
+  .content-box .tooltip-invisible::after {
+    display: none !important;
+  }
+  .content-box .icons {
+    padding: 0% !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

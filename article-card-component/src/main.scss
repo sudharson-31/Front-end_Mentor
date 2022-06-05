@@ -81,7 +81,13 @@ body{
            cursor: pointer;
            transition: 100ms;
            position: relative;
+           //z-index: 2;
+            svg{
+                z-index: 2;
+            }
+           
         }
+        
         .tooltip-invisible{
             position: absolute;
             bottom: 150%;
@@ -93,6 +99,8 @@ body{
             background-color: $vdg-blue;
             transition: all 1s;
             border-radius: 10px;
+            display: none;
+            z-index: 1;
 
             #title{
                 color: $g-blue;
@@ -105,7 +113,6 @@ body{
                 background-size: 200% 100%;
                 background-position: 100%;
                 transition: background-position 275ms ease;
-
             }
             #title:hover{
                 //color: white;
@@ -138,4 +145,59 @@ body{
         }
     }
      
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-box{
+        flex-direction: column;
+        max-width: 290px;
+        height: max-content;
+
+    }
+    .banner-image-container{
+        #banner-image{
+            height: 230px;
+            width: 290px;
+            object-fit: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+    .content-box{
+        margin: 8% 10% 6%;
+        #heading{
+            font-size: 1em;
+            padding-bottom: 3%;
+        }
+        #content{
+            font-size: 0.8em;
+            line-height: 1.7;
+            padding-bottom: 5%;
+        }
+        #share-image-container{
+            margin-left: 15% !important;
+        }
+        #title{
+            //font-size: 0.8em;
+            padding-right: 4% !important;
+            
+        }
+        .tooltip-invisible{
+            position:relative ;
+            width: 260px !important;
+            bottom: -80% !important;
+            right: -110% !important;
+            padding: 70% 50% !important;
+            //margin-top: 75% !important;
+            justify-content: flex-start !important;
+            border-radius: 0px 0px 10px 10px  !important;
+        }
+        .tooltip-invisible::after{
+            display: none !important;
+        }
+        .icons{
+            padding: 0% !important;
+        }
+    }
 }
