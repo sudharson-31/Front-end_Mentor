@@ -117,9 +117,71 @@ body {
   cursor: pointer;
   -webkit-transition: 100ms;
   transition: 100ms;
+  position: relative;
 }
 
-.content-box #profile #share-image-container:hover {
+.content-box #profile .tooltip-invisible {
+  position: absolute;
+  bottom: 150%;
+  padding: 50%;
+  background-color: #6d7f97;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
   background-color: #48556a;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.content-box #profile .tooltip-invisible #title {
+  color: #9eafc2;
+  letter-spacing: 3px;
+  padding-right: 10%;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, white), color-stop(50%, #9eafc2));
+  background: linear-gradient(to right, white, white 50%, #9eafc2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.content-box #profile .tooltip-invisible #title:hover {
+  background-position: 0 100%;
+}
+
+.content-box #profile .tooltip-invisible .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20%;
+}
+
+.content-box #profile .tooltip-invisible .icons .icon {
+  margin: 0% 15%;
+}
+
+.content-box #profile .tooltip-invisible .icons .icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-position: 0 100%;
+}
+
+.content-box #profile .tooltip-invisible::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  border: 7px solid;
+  border-color: #48556a transparent transparent;
 }
 /*# sourceMappingURL=main.css.map */

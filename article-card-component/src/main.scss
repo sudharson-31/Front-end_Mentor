@@ -80,15 +80,62 @@ body{
            margin-left: 40%;
            cursor: pointer;
            transition: 100ms;
+           position: relative;
         }
-        #share-image-container:hover{
+        .tooltip-invisible{
+            position: absolute;
+            bottom: 150%;
+            padding: 50%;
+            background-color: $dsat-dblue;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
             background-color: $vdg-blue;
-            #share-image{
+            transition: all 1s;
+            border-radius: 10px;
+
+            #title{
+                color: $g-blue;
+                letter-spacing: 3px;
+                padding-right: 10%;
+                background: linear-gradient(to right, white, white 50%, $g-blue 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 275ms ease;
+
+            }
+            #title:hover{
+                //color: white;
+                background-position: 0 100%;
+            }
+            .icons{
+                display: flex;
+                align-items: center;
+                padding-right: 20%;
+               
+                .icon{
+                    margin: 0% 15%;
+                    //transition: all 250ms;
+
+                }
+                .icon:hover{
+                    transform: scale(1.2);
+                    background-position: 0 100%;
+                }
             }
         }
-
+        .tooltip-invisible::after{
+            content: " ";
+            position: absolute;
+            //bottom: -30px;
+            //left: -47%;
+            top: 100%;
+            border: 7px solid;
+            border-color: $vdg-blue transparent transparent;
+        }
     }
-    
-   
-    
+     
 }
