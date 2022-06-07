@@ -10,9 +10,9 @@ function initialState(){
 
 export default function ShareImg(){
     const [shareImg, setShareImg] = useState(()=>initialState())
-    const shareContainer = document.getElementById("share-image-container");
-    const tooltipContainer = document.getElementById("tooltip");
     function onShareHover(){
+        const shareContainer = document.getElementById("share-image-container");
+        const tooltipContainer = document.getElementById("tooltip");
         if(isShareOnFlag === true){
 
             setShareImg((prevState)=>{
